@@ -1,0 +1,9 @@
+Background
+Intel 公司在 X86 指令集上提供了 AVX (Advanced Vector Extensions)、
+SSE (Streaming SIMD Extensions) 的特殊指令，這些在 SIMD 指令上提供強力的加速。
+
+Problem
+現在給你長度為 N 的 32-bit floating point，分別將其開根號回傳。
+
+你可能會需要函數庫 #include <x86intrin.h>
+你可能會需要 AVX/SSE 開根指令 __m256 _mm256_sqrt_ps(__m256 a);
