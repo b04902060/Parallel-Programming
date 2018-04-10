@@ -1,0 +1,29 @@
+題目描述
+請嘗試使用 SIMD 技術 AVX/SSE/MMX 來加速以下的純數值計算。
+
+main.c
+最低需求加速兩倍快
+
+輸入格式
+有多組測資，每組一行包含三個整數 N,key1,key2，表示向量長度 N、向量 A⃗
+由亂數種子 key1 產生、向量 B⃗  由亂數種子 key2 產生。
+
+1≤N≤16777216
+輸出格式
+對於每組測資輸出一行整數，為 A⃗ ⋅B⃗  的 unsigned 32-bit integer 結果。
+
+範例輸入
+16777216 1 2
+16777216 3 5
+
+範例輸出
+2885681152
+2147483648
+
+編譯參數
+gcc -std=c99 -O3 -march=native main.c -lm
+
+
+參考資料
+當前測試機器 Intel CPU E5-2620v3
+Intel Intrinsics Guide
