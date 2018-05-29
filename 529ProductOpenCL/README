@@ -1,0 +1,3 @@
+哎，原本心情超差，一直寫不出來，結果終於在12點死線AC，心情好了一點。
+這題跟上次很像，但我上次沒做出來，OpenCL真的很搞。總之就是要設work_group裡面item的數量，一個work_group裡面運用local memory先計算區段的總和，然後存到host的buffer。這裡要用tree的加法才會快。
+但這樣還是不夠... 最後ac是讓每個thread不只算一個element，而是多個（8個有過）。到底實際上memory cache之類的效應讓這個版本怎麼過的也是不太明白，但總之謝天謝地。
